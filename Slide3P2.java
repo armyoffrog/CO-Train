@@ -1,25 +1,30 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Slide3P2 {
 
     public static void main(String[] args){
 
-        ArrayList<double> list = {1.6,4.0,6.7,4.3,5.8};
-        double sum;
-        double average;
+        List <Double> list = new ArrayList<>(Arrays.asList(1.0,4.0,6.0,4.0,5.0));
 
-        list.add(9.0);
-        list.add(7.1);
-        list.add(4.7);
+        double sum = 0.0;
+        double average = 0.0;
 
-        for (int element : list){
+        list.addAll(Arrays.asList(8.0,5.0,2.0));
 
-            sum += element
+        for (int i = 0; i < list.size(); i++) {
+
+            sum += list.get(i);
+
+            if (i == (list.size() - 1)) {
+
+                average = sum / list.size();
+                System.out.println(average);
+
+            }
 
         }
-
-        average = sum / list.size();
-
-        System.out.println(average);
 
     }
 
