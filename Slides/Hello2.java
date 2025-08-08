@@ -6,7 +6,7 @@ public class Hello2 {
         int a = 10;
         int b = 3;
         int c = 5;
-        int D = b * b - 4 * a * c;
+        int D = (b * b) - (4 * a * c);
 
         if (D > 0) {
 
