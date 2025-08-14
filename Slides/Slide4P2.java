@@ -14,7 +14,7 @@ public class Slide4P2 {
 
             for (int num = 2; num < numI; num++){
 
-                factor += num * numI;
+                factor *= num * numI;
 
             }
 
